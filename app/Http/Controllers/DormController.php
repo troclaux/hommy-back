@@ -53,6 +53,18 @@ class DormController extends Controller{
         if($request->street){
             $dorm->street = $request->street;
         }
+        if($request->dorm_number){
+            $dorm->dorm_number = $request->dorm_number;
+        }
+        if($request->zip_code){
+            $dorm->zip_code = $request->zip_code;
+        }
+        if($request->description){
+            $dorm->description = $request->description;
+        }
+        if($dorm->state_initials){
+            $dorm->state_initials = $request->state_initials;
+        }
 
         $dorm->save();
         return response()->json($dorm);

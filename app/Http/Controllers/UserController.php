@@ -23,9 +23,9 @@ class UserController extends Controller
         return response()->json($user);
     }
 
-    public function showDorm($id){
-        $dorm = Dorm::findOrFail($id);
-        return response()->json([$dorm]);
+    public function showUser($id){
+        $user = User::findOrFail($id);
+        return response()->json([$user]);
     }
 
     public function listUser(){
@@ -67,15 +67,4 @@ class UserController extends Controller
         return response()->json(['User deletado']);
     }
 
-    public function addUser($user_id){
-        $user = User::findOrFail($user_id);
-        $user->save();
-        return response()->json($user);
-    }
-
-    public function removeUser($user_id){
-        $user = User::findOrFail($user_id);
-        $user->save();
-        return response()->json(["user"=>$user]);
-    }
 }

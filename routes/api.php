@@ -26,4 +26,9 @@ Route::put('addDorm/{id}/{dorm_id}', 'DormController@addDorm');
 Route::put('removeDorm/{id}/{dorm_id}', 'DormController@removeDorme');
 Route::delete('deleteDorm/{id}', 'DormController@deleteDorm');
 
+
 Route::post('createUser', 'UserController@createUser');
+Route::get('showUser/{id}', 'UserController@showUser');
+Route::get('listUser', 'UserController@listUser');
+Route::put('updateUser/{id}', 'UserController@updateUser');
+Route::delete('deleteUser/{id}', 'UserController@deleteUser');

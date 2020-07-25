@@ -23,7 +23,7 @@ Route::get('showDorm/{id}', 'DormController@showDorm');
 Route::get('listDorm', 'DormController@listDorm');
 Route::put('updateDorm/{id}', 'DormController@updateDorm');
 Route::put('addDorm/{id}/{dorm_id}', 'DormController@addDorm');
-Route::put('removeDorm/{id}/{dorm_id}', 'DormController@removeDorme');
+Route::put('removeDorm/{id}/{dorm_id}', 'DormController@removeDorm');
 Route::delete('deleteDorm/{id}', 'DormController@deleteDorm');
 
 

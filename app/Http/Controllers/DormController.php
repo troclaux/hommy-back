@@ -13,7 +13,6 @@ class DormController extends Controller{
 
         $dorm->number_of_rooms = $request->number_of_rooms;
         $dorm->city = $request->city;
-        $dorm->state = $request->state;
         $dorm->street = $request->street;
         $dorm->dorm_number = $request->dorm_number;
         $dorm->zip_code = $request->zip_code;
@@ -44,9 +43,6 @@ class DormController extends Controller{
         if($request->city){
             $dorm->city = $request->city;
         }
-        if($request->state){
-            $dorm->state = $request->state;
-        }
         if($request->dorm_number){
             $dorm->dorm_number = $request->dorm_number;
         }
@@ -62,7 +58,7 @@ class DormController extends Controller{
         if($request->description){
             $dorm->description = $request->description;
         }
-        if($dorm->state_initials){
+        if($request->state_initials){
             $dorm->state_initials = $request->state_initials;
         }
 

@@ -19,7 +19,6 @@ class CreateDormsTable extends Migration
 
             $table->integer('number_of_rooms')->unsigned();
             $table->string('city');
-            $table->string('state');
             $table->string('street');
             $table->integer('dorm_number')->unsigned();
             $table->string('zip_code');

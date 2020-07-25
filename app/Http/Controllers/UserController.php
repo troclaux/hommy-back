@@ -16,7 +16,6 @@ class UserController extends Controller
         $user->age = $request->age;
         $user->phone_number = $request->phone_number;
         $user->cpf = $request->cpf;
-        $user->password = $request->password;
         $user->credit_card = $request->credit_card;
 
         $user->save();

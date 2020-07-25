@@ -23,7 +23,6 @@ class CreateUsersTable extends Migration
             $table->integer('age')->unsigned();
             $table->string('phone_number');
             $table->string('cpf');
-            $table->string('password');
             $table->string('credit_card');
             
             $table->rememberToken();

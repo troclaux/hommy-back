@@ -10,11 +10,16 @@ class DormController extends Controller{
 
     public function createDorm(Request $request){
         $dorm = new Dorm;
-        $dorm->number_of_rooms= $request->number_of_rooms;
-        $dorm->city= $request->city;
-        $dorm->state= $request->state;
-        $dorm->street= $request->street;
-        $dorm->dorm_number= $request->dorm_number;
+
+        $dorm->number_of_rooms = $request->number_of_rooms;
+        $dorm->city = $request->city;
+        $dorm->state = $request->state;
+        $dorm->street = $request->street;
+        $dorm->dorm_number = $request->dorm_number;
+        $dorm->zip_code = $request->zip_code;
+        $dorm->description = $request->description;
+        $dorm->state_initials = $request->state_initials;
+
         $dorm->save();
         return response()->json($dorm);
     }

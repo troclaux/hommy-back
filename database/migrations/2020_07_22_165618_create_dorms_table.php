@@ -16,12 +16,16 @@ class CreateDormsTable extends Migration
         Schema::create('dorms', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id')->nullable();
+
             $table->integer('number_of_rooms')->unsigned();
             $table->string('city');
             $table->string('state');
             $table->string('street');
             $table->integer('dorm_number')->unsigned();
-            $table->
+            $table->string('zip_code');
+            $table->string('description');
+            $table->string('state_initials');
+
             $table->timestamps();
         });
 
